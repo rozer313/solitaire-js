@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="top-bar">
+    <div class="top-bar-text" id="moves">Moves: 0</div>
+    <div class="top-bar-text" id="score">Score: 0</div>
+    <div class="top-bar-text" id="timer">00:00</div>
+</div>
+<div class="card-container-top">
+    <div class="card-box">
+        <div class="card" id="reverse" style="background-image: url('img/png_cards/card_reverse.png'); background-size: 120px 160px;"></div>
+    </div>
+
+    <div class="card-box" id="available-container"></div>
+
+    <div class="card-box card-placeholder" id="container-1"></div>
+
+    <div class="card-box card-placeholder" id="container-2"></div>
+
+    <div class="card-box card-placeholder" id="container-3"></div>
+
+    <div class="card-box card-placeholder" id="container-4"></div>
+
+</div>
+
+<div class="card-container-bottom">
+    <div class="card-box card-placeholder" id="column-1"></div>
+
+    <div class="card-box card-placeholder" id="column-2"></div>
+
+    <div class="card-box card-placeholder" id="column-3"></div>
+
+    <div class="card-box card-placeholder" id="column-4"></div>
+
+    <div class="card-box card-placeholder" id="column-5"></div>
+
+    <div class="card-box card-placeholder" id="column-6"></div>
+
+    <div class="card-box card-placeholder" id="column-7"></div>
+
+</div>
+
+
+<div id="nav-bar">
+    <div id="new-game-button" onclick="window.location.reload();">
+        <div class="emoji-icon">➕</div>
+        <div class="text-icon">New Game</div>
+    </div>
+
+    <div id="return-button" onclick="undo();">
+        <div class="emoji-icon">↩️</div>
+        <div class="text-icon">Undo</div>
+    </div>
+
+    <div id="hint-button" onclick="hint();">
+        <div class="emoji-icon">💡</div>
+        <div class="text-icon">Hint</div>
+    </div>
+
+    <div id="solve-button" class="not-available" onclick="solve();">
+        <div class="emoji-icon">✔️</div>
+        <div class="text-icon">Solve</div>
+    </div>
+</div>
+
+<script src="game.js" charset="utf-8"></script>
+
+</body>
+</html>
